@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CenterViewController">
+            <connections>
+                <outlet property="left" destination="0dr-Gc-a00" id="deC-h0-mmP"/>
+                <outlet property="leftView" destination="ohd-o0-O7n" id="FeM-zV-f82"/>
+                <outlet property="mainImage" destination="CVF-bg-Fmh" id="awT-Uk-SjW"/>
+                <outlet property="menuDescription" destination="Jbb-Z8-T5j" id="rUw-WL-yUM"/>
+                <outlet property="menuTitle" destination="Lf6-I3-V6g" id="QT6-rB-Ql2"/>
+                <outlet property="right" destination="UYc-mN-ZsI" id="J5F-NN-DjB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohd-o0-O7n">
+                    <rect key="frame" x="0.0" y="25" width="375" height="713"/>
+                    <subviews>
+                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home.png" translatesAutoresizingMaskIntoConstraints="NO" id="CVF-bg-Fmh">
+                            <rect key="frame" x="53" y="52" width="274" height="202"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electrical and Electronics Engineering Institute" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lf6-I3-V6g">
+                            <rect key="frame" x="23" y="257" width="338" height="59"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visit us at: www.eee.upd.edu.ph" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S2-yU-OqN">
+                            <rect key="frame" x="14" y="612" width="353" height="21"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ot8-ab-glr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <items>
+                                <navigationItem title="UP-EEEI" id="wbD-Iv-lac">
+                                    <barButtonItem key="leftBarButtonItem" tag="1" title="Menu" id="0dr-Gc-a00">
+                                        <connections>
+                                            <action selector="btnMoveRight:" destination="-1" id="UWw-Kf-VBX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" tag="1" systemItem="compose" id="UYc-mN-ZsI">
+                                        <connections>
+                                            <action selector="btnMoveLeft:" destination="-1" id="zTo-36-WW8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-Z8-T5j">
+                            <rect key="frame" x="21" y="319" width="333" height="277"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <mutableString key="text">The UP-EEEI is the premier academic institution in the field of electrical and electronics engineering in the Philippines. The undergraduate program in Electrical Engineering (EE), Electronics and Communications Engineering (ECE) and Computer Engineering (CoE) provide a strong background in fundamentals with an emphasis on the development of analytical and creative abilities aimed at problem solving and innovation. Lectures and discussion classes are founded on solid appreciation of fundamentals and exposure to new and emerging technologies. These are accompanied by the most advanced instructional and research hands-on laboratories in the country that reinforce learning through experimentation. In 1993, the UP-EEEI (then the Department of Electrical Engineering) was the first unit in the College of Engineering to require a senior undergraduate capstone project, which was previously an elective. The '198', as it is fondly called in EEE-speak, is an institution that trains students in the practice of good engineering judgment, principles of scientific investigation, teamwork, communication skills and proper time management. In recent years, an increasing number of these “198” projects conducted in our research laboratories have even been pursued beyond the lab and into commercial prototypes that help spur local development of technology.</mutableString>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="279.5" y="282.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home.png" width="65" height="75"/>
+    </resources>
+</document>
